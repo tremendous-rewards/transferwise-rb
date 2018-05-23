@@ -200,7 +200,7 @@ statement = TransferWise::BorderlessAccount::Statement.list(nil, { 'params' => q
 ## Fund your transfer from your borderless account available balance.
 
 ```ruby
-transfer = TransferWise::Transfer.fund(transfer.id, { type: 'BALANCE' })
+transfer = TransferWise::Transfer.fund(transfer.id, { type: 'BALANCE' }, {access_token: access_token})
 ```
 
 ## Currencies
