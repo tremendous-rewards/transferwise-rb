@@ -197,6 +197,12 @@ query_string = {
 statement = TransferWise::BorderlessAccount::Statement.list(nil, { 'params' => query_string })
 ```
 
+## Fund your transfer from your borderless account available balance.
+
+```ruby
+transfer = TransferWise::Transfer.fund(transfer.id, { type: 'BALANCE' })
+```
+
 ## Currencies
 https://api-docs.transferwise.com/v1/borderless-account/available-currencies
 
