@@ -2,7 +2,7 @@ module TransferWise
   class APIResource
     include TransferWise::TransferWiseObject
 
-    API_VERSION = 'v1'.freeze
+    API_VERSION = 'v1'
 
     def self.class_name
       self.name.split('::')[-1]
